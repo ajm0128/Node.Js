@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+  body
+    p
+    - let all_posts = posts;
+      each post, id in all_posts
+        p
+          a(href="/posts/" + id)= post.title
+      p
+        a(href="/posts/new") 글 쓰기
